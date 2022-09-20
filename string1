@@ -1,0 +1,23 @@
+import java.util.*;
+public class Main{
+    public static void main(String args[])
+    {
+        int i,n;
+        String str;
+        char ch;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a string:");
+        str=sc.nextLine();
+        n=str.length();
+        for(i=0;i<n;i++)
+        {
+            ch=str.charAt(i);
+            {
+                if(ch=='e')
+                ch='*';
+            }
+                System.out.print(ch);
+            }
+            System.out.println();
+    }
+    }

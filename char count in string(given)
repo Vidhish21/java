@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main{
+    public static void main(String args[])
+    {
+        String st;
+        char ch;
+        int i,p,count=0;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter your String :");
+        st=sc.nextLine();
+        p=st.length();
+        for(i=0;i<p;i++)
+        {
+            ch=st.charAt(i);
+            count=count+1;
+        }
+        System.out.println("count is "+count);
+    }
+}

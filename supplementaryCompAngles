@@ -1,0 +1,32 @@
+import java.io.*;
+public class Main
+{
+	public static void main(String[] args)throws IOException {
+	    InputStreamReader read = new InputStreamReader(System.in);
+	    BufferedReader in = new BufferedReader(read);
+	    int a, b,s=0;
+	    double m=0,n=0, p=0,q=0;
+		System.out.println("Enter the two angles: ");
+		a = Integer.parseInt(in.readLine());
+		b = Integer.parseInt(in.readLine());
+		s= a+b;
+		if(s==90){
+		    System.out.println("Complementary Angles");
+		    m=(22.0/(7.0*180))*a;
+		    n= (22.0/(7.0*180))*b;
+		    System.out.println("The Sine value of "+a+" is :" +Math.sin(m));
+		    System.out.println("The Sine values of "+b+" is :" + Math.sin(n));
+		}
+		else if(s==180){
+		    System.out.println("Supplementary Angles");
+		    p=(22.0/(7.0*180))*a;
+		    q= (22.0/(7.0*180))*b;
+		    System.out.println("The Cosine value of "+a+" is :" +Math.cos(p));
+		    System.out.println("The Cosine values of "+b+" is :" + Math.cos(q));
+		}
+		else{
+		    System.out.println("not matched");
+		}
+		
+	}
+}

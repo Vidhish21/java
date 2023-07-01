@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    int a,p;
+	    String st;
+	    char ch;
+	    Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a string: ");
+		st= sc.nextLine();
+		p=st.length();
+		for(a=0;a<p;a++){
+		    ch=st.charAt(a);
+		    if(ch=='e')
+		    ch='*';
+		    System.out.print(ch);
+		}
+		System.out.println();
+		
+	}
+}
